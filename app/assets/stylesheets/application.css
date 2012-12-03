@@ -11,3 +11,30 @@
  *= require_self
  *= require_tree .
 */
+
+.bakery_form fieldset {
+background: #efe;
+}
+.bakery_form legend {
+color: #dfd;
+background: #141;
+font-family: sans-serif;
+padding: 0.2em 1em;
+}
+.bakery_form label {
+width: 5em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+.bakery_form select, .bakery_form textarea, .bakery_form input {
+margin-left: 0.5em;
+}
+.bakery_form .submit {
+margin-left: 4em;
+}
+.bakery_form div {
+margin: 0.5em 0;
+}

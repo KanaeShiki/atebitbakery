@@ -1,3 +1,305 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#store .entry form, #store .entry form div {
+display: inline;
+}
+
+h1, h2 {
+    font-family: Cambria, Georgia, "Bitstream Charter", serif;
+}
+
+#content {
+    width: 706px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.products {
+    overflow: auto;
+    margin-left: -20px;
+    margin-top: 30px; 
+}
+
+.product {
+    background: transparent;
+    width: 200px;
+    border: 5px solid #fbecf8;
+    padding: 1px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    min-width: 220px;
+}
+
+.product h2 {
+    margin-top: 0;
+}
+
+.product .actions, .menu {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+p.no_image {
+    height: 246px;
+    background: #fff;
+    padding: 10px;
+}
+
+/*main*/
+a:link {
+	text-decoration: none;
+	color:#a28075;
+}
+a:hover {
+	text-decoration: none;
+        background: transparent;
+}
+a:visited {
+	text-decoration: none;
+	color:#a28075;
+}
+a:link img, a:hover img, a:visited img
+{
+	border: none;
+        background: transparent;
+}
+
+img
+{
+	align: left;
+	border: none;
+}
+
+html, body { height: 100%;}
+
+
+body
+{
+background:url(/assets/PovRayMan-Mario3-3-1600x1200.png); 
+background-color:#FFFFFF;
+background-repeat:no-repeat;
+background-attachment:fixed;
+font-family:Arial, Helvetica, sans-serif; 
+color: #ff9999; 
+font-size: 14px; 
+margin: 0;
+padding: 0; 
+overflow: auto;
+}
+
+::-webkit-scrollbar 
+{
+    height: 12px;
+    width: 12px; 
+    background: #ffffff;
+}
+    
+::-webkit-scrollbar-thumb 
+{
+    background: #ffffff;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner
+{
+    background: #fee7ec;
+}
+
+object
+{
+	padding: 0;
+	margin: 0 auto;
+	border: 0px;
+}
+
+/*border*/
+.main
+{
+	width: 964px; 
+	margin:0 auto; 
+	background: url(/assets/border.png) repeat-y; 
+	float: inherit; 
+	overflow: hidden;
+}
+
+/*main content*/
+.main #content{
+	width: 900px;
+	margin:0 auto;
+	background: #fef9f5 url() bottom right no-repeat;
+	min-height: 400px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+	padding-bottom:50px;
+	text-align: center;
+	border-top: 1px solid #ee98a3;
+	overflow: hidden;
+}
+
+.main #innercontent{
+	width: 900px;
+	margin:0 auto;
+	background: #fef9f5 url() bottom right no-repeat;
+	min-height: 400px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+	padding-bottom:50px;
+	text-align: center;
+	border-top: 1px solid #ee98a3;
+	overflow: hidden;
+}
+
+.contact{padding-left: 15px; padding-right: 15px; overflow: hidden;}
+.contact h2{text-decoration: underline; overflow: hidden;}
+.spacer{height: 360px; overflow: hidden;}
+
+/*header*/
+
+.logo{background: url(/assets/main_logo.png) no-repeat; background-position: top center; height:180px;}
+
+/*concept*/
+.concept{background: url() no-repeat; height: 500px; width: 880px;  margin-top: 10px; margin:0 auto;}
+
+/*shopping*/
+.shopping{background: url() no-repeat; height: 2000px; width: 600px;  margin-top: 20px; margin:0 auto;}
+
+/*shoplist*/
+.concept{background: url() no-repeat; height: 800px; width: 880px;  margin-top: 10px; margin:0 auto;}
+
+/*menu*/
+#menu{background-color: #ffffff; width: 100%; height: 40px; border-top: 1px solid #e387b7; border-bottom: 1px solid #e387b7; padding: none; overflow: hidden;}
+#menu ul{    margin-left: auto;
+    margin-right: auto; width: 900px;margin-top: 2px;}
+#menu ul li{ padding: 0px 5px 6px 5px;display:inline;font-size: 14px; font:Arial, Helvetica, sans-serif ; color: #cc6699;}
+#buttons{width: 110px; margin-top: -52px; margin-left: 670px;}
+
+/*News*/
+.news{margin: 10px 0px 0px 0px; background:url(/assets/newsback.png) no-repeat; height: 300px; width: 415px; padding: 10px 0 0 15px; overflow: hidden;}
+.news #head{background:url() no-repeat; height: 100px; width: 180px; overflow: hidden;}
+.news #content{width: 420px; height: 280px; overflow: hidden;}
+
+/*arrivals*/
+.arrivals{ float: right; margin: -300px 0 0 40px; height: 700px; width: 430px; padding-left: 17px; border-left: 2px dashed #dcd4cc; overflow: hidden; text-align: center;}
+.arrivals #head {background: url() no-repeat; height: 40px; width: 275px; overflow: hidden;}
+.arrivals #new{overflow: auto; overflow: hidden; height: 250px;}
+
+/*new prints*/
+.print{ float: left; margin: -375px 0 0 25px; width: 425px; overflow: hidden;}
+.print #head{background:url(/assets/newprint.jpg) no-repeat; width: 258px; height: 32px; overflow:hidden;}
+.print #arrive{width: 425px; height: 500px; padding-top: 20px; overflow: hidden;}
+
+
+/*spacer*/
+.spacer{height: 50px; background: transparent; margin-top: 450px; overflow: hidden;}
+
+/*Footer*/
+#footer{height: 30px; color: #7a644e; text-align: center; font-size: 11px; width: 964px; float: inherit; overflow: hidden;}
+
+/*slider*/
+.slide-out-div {padding: 5px 15px 5px 5px; width: 100px; background: #ffd6e1; border: 1px solid #aa8b7a;} 
+.slide-out-div a{display:block; height: 15px; padding-top: 10px;text-decoration: none; font-size: 11px; background: transparent; }
+.slide-out-div a ul{margin-top: -23px;}
+.slide-out-div a img{padding: 5px;}
+
+
+.awesome, .awesome:visited 
+{
+	background: #ffffff url() repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #000; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+.awesome:hover					{ background-color: #fff;  }
+.awesome:active					{ top: 1px; }
+.small.awesome, .small.awesome:visited 		{ font-size: 11px; padding: bold; }
+.awesome, .awesome:visited,
+.medium.awesome, .medium.awesome:visited 	{ font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
+.large.awesome, .large.awesome:visited 		{ font-size: 14px; padding: 8px 14px 9px; }
+.green.awesome, .green.awesome:visited		{ background-color: #91bd09; }
+.green.awesome:hover				{ background-color: #ffffff; }
+.blue.awesome, .blue.awesome:visited		{ background-color: #99bbff; }
+.blue.awesome:hover				{ background-color: #ffffff; }
+.red.awesome, .red.awesome:visited		{ background-color: #e33100; }
+.red.awesome:hover				{ background-color: #ffffff; }
+.magenta.awesome, .magenta.awesome:visited	{ background-color: #a9014b; }
+.magenta.awesome:hover				{ background-color: #ffffff; }
+.orange.awesome, .orange.awesome:visited	{ background-color: #ff5c00; }
+.orange.awesome:hover				{ background-color: #ffffff; }
+.yellow.awesome, .yellow.awesome:visited	{ background-color: #ffb515; }
+.yellow.awesome:hover				{ background-color: #ffffff; }
+
+
+table,td
+{
+	color:#ff5588;
+	font-size:12px;
+	vertical-align:middle;
+	margin:5px auto;
+}
+
+label:hover
+{
+	background: transparent;
+}
+
+.inputs
+{
+	background:#fef9f5;
+	font-family:12pt;
+	font-weight:bold;
+	padding:5px;
+	width:700px;
+	color:pink;
+}   
+
+
+input,select,textarea
+{
+	color:#000000;
+	font-weight:bold;
+	background: white;
+	padding:0px;
+}
+
+input:focus, select:focus,textarea:focus
+{
+	background:transparent;
+}
+
+.error
+{
+	visibility:hidden;
+	color:red;
+	font-size:87%;
+	font-weight:bold;
+}
+
+#store .cart_title {
+font: 120% bold;
+}
+#store .item_price, #store .total_line {
+text-align: right;
+}
+#store .total_line .total_cell {
+font-weight: bold;
+border-top: 1px solid #595;
+}

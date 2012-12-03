@@ -1,4 +1,9 @@
 class ProductsController < ApplicationController
+  
+                
+  before_filter :require_sudo
+  
+  
   # GET /products
   # GET /products.json
   def index
@@ -9,6 +14,7 @@ class ProductsController < ApplicationController
       format.json { render json: @products }
     end
   end
+
 
   # GET /products/1
   # GET /products/1.json
@@ -80,4 +86,15 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
+  def who_bought
+    @product = Product.find(params[:id])
+      respond_to do |format|
+      format.atom
+      format.xml { render :xml => @product }
+    end
+  end
+  
+  
 end

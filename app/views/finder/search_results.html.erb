@@ -1,0 +1,9 @@
+<h1>Search Results for "<%= @keyword %>"</h1>
+
+<% if @products.empty? %>
+  <p><em>No products were found.</em></p>
+<% end %>
+
+<div class="products">
+  <%= render @products %>
+</div>

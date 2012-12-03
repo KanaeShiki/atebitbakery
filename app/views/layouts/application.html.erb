@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atebitbakery</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+			  <title>atebitbakery</title>
+         <%= stylesheet_link_tag    "application", :media => "all" %>
+          <%= javascript_include_tag "application" %>
+          <%= csrf_meta_tags %>
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+			<script src="/assets/jquery.min.js" type="text/javascript"></script>
+
+			<script src="/assets/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
+      
 </head>
+
 <body>
 
-<%= yield %>
+	<div id="menu"><ul>
 
-</body>
+		<li><a href="Index.htm"><img src="/assets/Home.png" alt="Home"></a></li>
+		<li><a href="Concept.htm"><img src="/assets/Concept.png" alt="Concept" /></a></li>
+		<li><a href="Shopping.htm"><img src="/assets/Shopping.png" alt="Shopping" /></a></li>
+		<li><a href="ShopList.htm"><img src="/assets/ShopList.png" alt="Shop List" /></a></li>
+		<li><a href="Blog.htm"><img src="/assets/Blog.png" alt="Blog" /></a></li>
+		<li><a href="Contact.htm"><img src="/assets/Contact.png" alt="Contact" /></a></li></ul>
+
+	</div>
+        <div id="header">
+          
+	<div class="logo"></div>
+        </div>
+	<div class="main">
+          	<script type="text/javascript">
+		     $(function(){
+		         $('.slide-out-div').tabSlideOut({
+		             tabHandle: '.handle',
+		             pathToTabImage: '/assets/social_tab.png',
+		             imageHeight: '98px',
+		             imageWidth: '33px',
+		             tabLocation: 'left',
+		             speed: 500,
+		             action: 'click',
+		             topPos: '200px',
+		             leftPos: '20px',
+		             fixedPosition: true,
+		         });
+
+		     });
+
+    		</script>
+	<div id="innercontent">
+            <div id="content">
+    <div class="menu">
+      <% if session[:user_id] %>  
+        <br />
+          <%= link_to 'Orders', orders_path %><br />
+          <%= link_to 'Products', products_path %><br />
+          <%= link_to 'Users', users_path %><br />
+        <br />
+        <%= button_to 'Logout', logout_path, :method => :delete %>
+      <% end %>
+    </div>
+    
+    <%= yield %>
+  </div>
+	<div class="slide-out-div" style="line-height: 1; position: fixed; height: 246px; top: 200px; left: -122px; ">
+	            <a class="handle" href="" style="background-image: url(/assets/social_tab.png); background-attachment: initial;
+	            background-origin: initial; background-clip: initial; background-color: initial; width: 33px; height: 98px; display: block;
+	            text-indent: -99999px; outline-style: none; outline-width: initial; outline-color: initial; position: absolute; top: 0px;
+	            right: -33px; background-position: initial initial; background-repeat: no-repeat no-repeat; ">Content</a>
+	            <div id="cart">
+<% if @cart %>
+<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+<%= render @cart %>
+<% end %>
+<% end %>
+</div>
+</div>
+</div>
+
+ </body>
+
+
 </html>
