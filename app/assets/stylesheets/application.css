@@ -13,11 +13,11 @@
 */
 
 .bakery_form fieldset {
-background: #efe;
+background: pink;
 }
 .bakery_form legend {
-color: #dfd;
-background: #141;
+color: #fbecf8;
+background: #a28075;
 font-family: sans-serif;
 padding: 0.2em 1em;
 }

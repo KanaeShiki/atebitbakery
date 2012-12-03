@@ -15,6 +15,8 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Atebitbakery::Application.routes.draw do
+  resources :mains
+
   get 'admin' => 'admin#index'
 
   controller :sessions do
@@ -101,6 +103,7 @@ end
 
 
 #Atebitbakery::Application.routes.draw do
+
 #  
 #  match "finder" => "finder#index", :as => 'finder', :via => :get
 #

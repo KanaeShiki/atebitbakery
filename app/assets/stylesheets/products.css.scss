@@ -11,11 +11,10 @@ h1, h2 {
 }
 
 #content {
-    width: 706px;
+    width: 406px;
     background: #fff;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
 }
 
 .products {
@@ -131,16 +130,15 @@ object
 
 /*main content*/
 .main #content{
-	width: 900px;
+	width: 500px;
 	margin:0 auto;
 	background: #fef9f5 url() bottom right no-repeat;
-	min-height: 400px;
+	min-height: 200px;
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -4em;
 	padding-bottom:50px;
 	text-align: center;
-	border-top: 1px solid #ee98a3;
 	overflow: hidden;
 }
 
